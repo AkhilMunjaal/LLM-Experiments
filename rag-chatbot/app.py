@@ -52,7 +52,7 @@ class RAG_Summary_QA:
     def generate_summary(self):
         """Generates summary of research paper as the user enters research paper number."""
         
-        # Add the support for summarization chain with map reduce or refine. Currently only being tested with page 1 content.
+        # ToDo : Add the support for summarization chain with map reduce or refine. Currently only being tested with page 1 content.
         text = self.final_docs[0].page_content
         prompt = ChatPromptTemplate.from_template(
             f"""
